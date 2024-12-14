@@ -151,7 +151,45 @@ footer {
 .service-cards .card:hover {
     transform: scale(1.05);
 }
-
+#contact-main{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    gap:20px;
+    justify-content: center;
+    margin:1em;
+}
+#contact-main #contact-form{
+    padding:20px;
+    border:1px solid #000000;
+    border-radius: 5px;
+    width:40%;
+    box-shadow: 0 0 5px #000000;
+}
+#contact-main #contact-info{
+    width:40%;
+    padding:20px;
+}
+#contact-main #contact-info h2{
+    margin-bottom:10px;
+}
+#contact-info .icons{
+    width:25px;
+}
+#contact-info p{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 15px;
+}
+#social-media-pages .icons{
+    margin-right:10px;
+    width:40px;
+}
+#social-media-pages h2{
+    margin-top:15px;
+    margin-bottom:10px;
+}
 .contact form {
     display: flex;
     flex-direction: column;
