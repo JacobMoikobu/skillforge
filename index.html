@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillForge Solutions</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <script defer src="script.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -17,7 +16,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#services">Products/Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#subscription">Subscription</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <a href="#get-started" class="cta-btn">Get Started</a>
@@ -25,99 +25,173 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Building a Better World Through Impactful Tech Projects</h1>
-            <p>Empowering software engineers to connect with transformative web application projects that drive socio-economic progress.</p>
-            <div class="hero-buttons">
-                <a href="#services" class="btn primary">Learn More</a>
-                <a href="#join-engineer" class="btn secondary">Join as an Engineer</a>
-            </div>
+<section id="home" class="hero">
+    <div class="hero-content fade-in">
+        <h1>Building a Better World Through Impactful Tech Projects</h1>
+        <p>Empowering engineers to connect with transformative projects that drive progress.</p>
+        <div class="hero-buttons fade-in">
+            <a href="#features" class="btn primary">Explore Features</a>
+            <a href="#join-engineer" class="btn secondary">Join as an Engineer</a>
         </div>
-        <div class="hero-graphic">
-            <img src="images/code-screen.jpg" alt="Hero graphic" />
-        </div>
-    </section>
+    </div>
+    <div class="hero-graphic fade-in">
+        <img src="images/code-screen.jpg" alt="Hero graphic">
+    </div>
+</section>
+
 
     <!-- About Us -->
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>At SkillForge Solutions, we are dedicated to bridging the gap between skilled engineers and meaningful tech projects, fostering innovation that drives socio-economic change.</p>
+        <p>SkillForge Solutions bridges the gap between engineers and impactful tech projects, fostering innovation and socio-economic progress.</p>
         <div class="core-values">
             <div class="value">
-                <img src="images/icon-collaboration.png"height="70px" width ="70px"alt="Collaboration icon">
+                <img src="images/icon-collaboration.png" alt="Collaboration icon">
                 <h3>Collaboration</h3>
             </div>
             <div class="value">
-                <img src="images/icon-equity.png"height ="70px"width="70px"alt="Equity icon">
+                <img src="images/icon-equity.png" alt="Equity icon">
                 <h3>Equity</h3>
             </div>
             <div class="value">
-                <img src="images/icon-innovation.png" height ="70px" width="70px"alt="Innovation icon">
+                <img src="images/icon-innovation.png" alt="Innovation icon">
                 <h3>Innovation</h3>
             </div>
             <div class="value">
-                <img src="images/icon-impact.jpg" height ="100px" width="100px" alt="Impact icon">
+                <img src="images/icon-impact.png" alt="Impact icon">
                 <h3>Purpose-Driven Impact</h3>
             </div>
         </div>
+        <div class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+        <div class="team-member">
+            <img src="images/team1.jpg" alt="Jabez Don">
+            <h3>Jabez Don</h3>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="images/team3.jpg" alt="John Murray">
+            <h3>John Murray</h3>
+            <p>Chief Technology Officer</p>
+        </div>
+        <div class="team-member">
+            <img src="images/team2.jpg" alt="Alice Grey">
+            <h3>Alice Grey</h3>
+            <p>Head of Operations</p>
+        </div>
+    </div>
+</div>
+
     </section>
 
     <!-- Features -->
     <section id="features" class="features">
-        <h2>Key Features</h2>
+        <h2>Our Features</h2>
         <div class="feature-grid">
             <div class="feature">
-                <img src="images/image-feature.jpg" alt="Feature icon">
+                <img src="images/image-feature.jpg" alt="Project Matching">
                 <h3>Advanced Project Matching</h3>
-                <p>Match engineers with projects that align with their skills and values.</p>
+                <p>Match engineers with projects aligning to their skills and values.</p>
+                <button class="btn primary learn-more-btn">Learn More</button>
+                <div class="dropdown-content">
+                    <p>Our project matching algorithm connects engineers with meaningful projects tailored to their expertise, ensuring impactful results.</p>
+                </div>
             </div>
             <div class="feature">
-                <img src="images/image-ai.jpg" alt="Feature icon">
+                <img src="images/image-ai.jpg" alt="AI-Optimized Workflows">
                 <h3>AI-Optimized Workflows</h3>
-                <p>Simplify project management with intelligent automation tools.</p>
-            </div>
-            <div class="feature">
-                <img src="images/image-talent.webp" alt="Feature icon">
-                <h3>Talent Utilization Analytics</h3>
-                <p>Track and optimize how skills are applied across projects.</p>
-            </div>
-            <div class="feature">
-                <img src="images/image-tech.jpeg" alt="Feature icon">
-                <h3>Equitable Tech Ecosystem</h3>
-                <p>Promote fairness and transparency in the tech industry.</p>
+                <p>Streamline project management with intelligent tools.</p>
+                <button class="btn primary learn-more-btn">Learn More</button>
+                <div class="dropdown-content">
+                    <p>Our AI tools simplify project workflows, saving time and enhancing productivity through automated solutions.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Us -->
-    <section id="contact" class="contact">
-        <div id="contact-main">
-            <div id="contact-form">
-                <h2>Contact Us</h2>
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
-                    <label for="message">Message</label>
-                    <textarea id="message" placeholder="Enter your message" required></textarea>
-                    <button type="submit" class="btn primary">Send Message</button>
-                </form>
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial active">
+                <p>"SkillForge connected me with meaningful projects that utilize my skills while making a difference in the world."</p>
+                <h4>— Jane Dopoi</h4>
             </div>
+            <div class="testimonial">
+                <p>"Their AI tools streamlined our workflow, saving us hours every week and allowing us to focus on innovation."</p>
+                <h4>— John Smith</h4>
+            </div>
+            <div class="testimonial">
+                <p>"SkillForge's analytics dashboard transformed the way we measure success, boosting our efficiency."</p>
+                <h4>— Sarah Lee</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription -->
+<section id="subscription" class="subscription">
+    <h2>Subscribe to Premium</h2>
+    <p>Unlock exclusive features and take your projects to the next level with our premium plans.</p>
+    <div class="plans">
+        <div class="plan">
+            <h3>Basic Plan</h3>
+            <p>$29/month</p>
+            <ul>
+                <li>Limited project matching</li>
+                <li>Basic analytics dashboard</li>
+                <li>Standard support</li>
+            </ul>
+            <button class="btn primary">Subscribe</button>
+        </div>
+        <div class="plan">
+            <h3>Pro Plan</h3>
+            <p>$49/month</p>
+            <ul>
+                <li>Unlimited project matching</li>
+                <li>Advanced analytics tools</li>
+                <li>Priority support</li>
+            </ul>
+            <button class="btn primary">Subscribe</button>
+        </div>
+        <div class="plan">
+            <h3>Enterprise Plan</h3>
+            <p>$99/month</p>
+            <ul>
+                <li>Custom solutions</li>
+                <li>Dedicated account manager</li>
+                <li>Full access to all features</li>
+            </ul>
+            <button class="btn primary">Subscribe</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div id="contact-main">
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Enter your message" required></textarea>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
             <div id="contact-info">
-                <h2>Contact Information</h2>
-                <p><img src="images/telephone.png" class="icons">+2540123450</p>
-                <p><img src="images/email.png" class="icons">skillforge@gmail.com</p>
-                <p><img src="images/gps.png" class="icons">72680 00200 Nairobi, kenya</p>
-                <div id="social-media-pages">
-                    <h2>Follow us</h2>
-                    <a href="https://www.x.com"><img src="images/twitter.png" class="icons"></a>
-                    <a href="https://www.linkedin.com"><img src="images/linkedin.png"class="icons"></a>
-                    <a href="https://www.facebook.com"><img src="images/facebook.png" class="icons"></a>
+                <h3>Our Contact Details</h3>
+                <p><strong>Phone:</strong> +2540123450</p>
+                <p><strong>Email:</strong> skillforge@gmail.com</p>
+                <p><strong>Location:</strong> 72680 00200 Nairobi, Kenya</p>
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.112123456!2d-122.081781123456!3d37.388123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb56789ab1234%3A0xc123d5678e890abc!2sGoogleplex!5e0!3m2!1sen!2sus!4v1681212345678"
+                        allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -125,14 +199,7 @@
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 SkillForge Solutions. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-            </ul>
         </div>
     </footer>
-<script src="script.js"></script>
 </body>
 </html>
-
